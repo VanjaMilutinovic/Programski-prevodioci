@@ -1,0 +1,220 @@
+package rs.ac.bg.etf.pp1;
+
+import java_cup.runtime.*;
+import org.apache.log4j.*;
+
+import java.io.*;
+import rs.ac.bg.etf.pp1.ast.*;
+
+
+parser code {:
+	
+	boolean errorDetected = false;
+	
+	Logger log = Logger.getLogger(getClass());
+   
+   
+    // slede redefinisani metodi za prijavu gresaka radi izmene teksta poruke
+     
+    public void report_fatal_error(String message, Object info) throws java.lang.Exception {
+      done_parsing();
+      report_error(message, info);
+    }
+  
+    public void syntax_error(Symbol cur_token) {
+        report_error("\nSintaksna greska", cur_token);
+    }
+  
+    public void unrecovered_syntax_error(Symbol cur_token) throws java.lang.Exception {
+        report_fatal_error("Fatalna greska, parsiranje se ne moze nastaviti", cur_token);
+    }
+
+    public void report_error(String message, Object info) {
+    	errorDetected = true;
+    	StringBuilder msg = new StringBuilder(message); 
+    	if (info instanceof Symbol)
+            msg.append (" na liniji ").append(((Symbol)info).left);
+        log.error(msg.toString());
+    }
+    
+    public void report_info(String message, Object info) {
+    	StringBuilder msg = new StringBuilder(message); 
+    	if (info instanceof Symbol)
+            msg.append (" na liniji ").append(((Symbol)info).left);
+        log.info(msg.toString());
+    }
+    
+:}
+
+scan with {:
+	Symbol s = this.getScanner().next_token();
+	if (s != null && s.value != null) 
+		log.info(s.toString() + " " + s.value.toString());
+	return s;
+:}
+
+
+terminal PROG, BREAK, CLASS, ELSE, MAIN, CONST, IF, NEW, PRINT, READ, RETURN, VOID, EXTENDS, CONTINUE, FOR, STATIC, NAMESPACE, EQUAL, NOT_EQUAL, GREATER_OR_EQUAL, LESS_OR_EQUAL, AND, OR, INCREMENT, DECREMENT, FULLSTOP, ACCESS, PLUS, MINUS, MULTIPY, DIVIDE, MODUS, GREATER, LESS, ASSIGMNET, SEMI, COLON, COMMA, LPAREN, RPAREN, LBRACE, RBRACE, LSQUAREBRACE, RSQUAREBRACE;
+terminal Integer NUMBER;
+terminal Character CHAR;
+terminal String IDENT;
+terminal Boolean BOOL;
+
+
+nonterminal rs.etf.pp1.symboltable.concepts.Obj Program, ProgName, Namespaces, Namespace, NamespaceName, ConstDecl, MainLabel, MainBody, Designator;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, Term, TermAddition, Expr, Factor, OptionalAccess, OptionalMultiply;
+nonterminal Declarations Declarations;
+nonterminal VarDecl VarDecl;
+nonterminal VarDeclarations VarDeclarations;
+nonterminal Vars Vars;
+nonterminal Consts Consts;
+nonterminal Const Const;
+nonterminal VarType VarType;
+nonterminal ConstType ConstType;
+nonterminal SquareBraces SquareBraces;
+nonterminal SquareBracesVars SquareBracesVars;
+nonterminal Statements Statements;
+nonterminal Statement Statement;
+nonterminal DesignatorStatement DesignatorStatement;
+nonterminal OptionalMinus OptionalMinus;
+nonterminal AddOperand AddOperand;
+nonterminal MultiplyOperand MultiplyOperand;
+nonterminal OptionalIdent OptionalIdent;
+nonterminal Numbers Numbers;
+
+Program::= (Program) PROG ProgName:P1 Namespaces:N2  Declarations:D3 MainBody:M4 {: RESULT=new Program(P1, N2, D3, M4); RESULT.setLine(P1left); :};
+ProgName::= (ProgName) IDENT:progName {: RESULT=new ProgName(progName); RESULT.setLine(progNameleft); :};
+
+MainBody::= (MainBody) LBRACE VOID MainLabel:M1 LPAREN RPAREN VarDeclarations:V2 LBRACE Statements:S3 RBRACE RBRACE {: RESULT=new MainBody(M1, V2, S3); RESULT.setLine(M1left); :};
+MainLabel::= (MainLabel) MAIN:mainLabel {: RESULT=new MainLabel(); :};
+Namespaces::= (NamespaceEmpty) {: RESULT=new NamespaceEmpty(); :}
+					| 
+			  (NamespaceList) Namespaces:N1 Namespace:N2 {: RESULT=new NamespaceList(N1, N2); RESULT.setLine(N1left); :};
+Namespace::= (Namespace) NAMESPACE NamespaceName:N1 LBRACE Declarations:D2 LBRACE RBRACE RBRACE {: RESULT=new Namespace(N1, D2); RESULT.setLine(N1left); :};
+NamespaceName::= (NamespaceName) IDENT:namespaceName {: RESULT=new NamespaceName(namespaceName); RESULT.setLine(namespaceNameleft); :};
+
+Declarations::= (DeclarationsEmpty) {: RESULT=new DeclarationsEmpty(); :}
+						|
+				(DeclarationsVar) VarDecl:V1 Declarations:D2 {: RESULT=new DeclarationsVar(V1, D2); RESULT.setLine(V1left); :}
+						|
+				(DeclarationsConst) ConstDecl:C1 Declarations:D2 {: RESULT=new DeclarationsConst(C1, D2); RESULT.setLine(C1left); :}
+						|
+		   		(ErrorDecl) error SEMI:l
+				{: parser.report_error("Izvrsen oporavak do ; na liniji " + lleft, null); :} Declarations:D1 {: RESULT=new ErrorDecl(D1); RESULT.setLine(D1left); :}
+			 			|
+			 	(ErrorDeclComma) error COMMA:l 
+			 	{: parser.report_error("Izvrsen oporavak do , na liniji " + lleft, null); :} Declarations:D1 {: RESULT=new ErrorDeclComma(D1); RESULT.setLine(D1left); :};
+				
+VarDecl::= (VarDecl) VarType:V1 IDENT:VarName SquareBraces:S2 Vars:V3 SEMI {: RESULT=new VarDecl(V1, VarName, S2, V3); RESULT.setLine(V1left); :};
+VarType::= (VarType) Type:varType {: RESULT=new VarType(varType); RESULT.setLine(varTypeleft); :};
+				
+VarDeclarations::= (VarDeclarationsEmpty) {: RESULT=new VarDeclarationsEmpty(); :}
+							|
+				   (VarDeclarationsNotEmpty) VarDeclarations:V1 VarDecl:V2 {: RESULT=new VarDeclarationsNotEmpty(V1, V2); RESULT.setLine(V1left); :};
+Vars::= (VarsEmpty) {: RESULT=new VarsEmpty(); :}
+			|
+		(VarsNotEmpty) Vars:V1 COMMA IDENT:varsName SquareBracesVars:S2 {: RESULT=new VarsNotEmpty(V1, varsName, S2); RESULT.setLine(V1left); :} ;
+		
+SquareBracesVars::= (SquareVarsEmpty) {: RESULT=new SquareVarsEmpty(); :}
+						|
+					(SquareVarsNotEmpty) LSQUAREBRACE RSQUAREBRACE {: RESULT=new SquareVarsNotEmpty(); :};
+		
+		
+ConstDecl::= (ConstDecl) CONST ConstType:C1 IDENT:constName ASSIGMNET Const:C2 Consts:C3 SEMI {: RESULT=new ConstDecl(C1, constName, C2, C3); RESULT.setLine(C1left); :};
+ConstType::=(ConstType) Type:constType {: RESULT=new ConstType(constType); RESULT.setLine(constTypeleft); :};
+			
+Const::= (NumberConst) NUMBER:constNumberValue {: RESULT=new NumberConst(constNumberValue); RESULT.setLine(constNumberValueleft); :}
+				|
+		  (CharConst) CHAR:constCharValue {: RESULT=new CharConst(constCharValue); RESULT.setLine(constCharValueleft); :}
+		  		|
+		  (BoolConst) BOOL:constBoolValue {: RESULT=new BoolConst(constBoolValue); RESULT.setLine(constBoolValueleft); :};
+Consts::= (ConstsEmpty) {: RESULT=new ConstsEmpty(); :}
+				|
+		  (ConstsNotEmpty)Consts:C1 COMMA IDENT:I2 ASSIGMNET Const:C3 {: RESULT=new ConstsNotEmpty(C1, I2, C3); RESULT.setLine(C1left); :} ;
+		  
+		  
+Type::= (TypeOne) IDENT:typeName {: RESULT=new TypeOne(typeName); RESULT.setLine(typeNameleft); :}
+			|
+		(TypeTwo) IDENT:I1 COLON COLON IDENT:I2 {: RESULT=new TypeTwo(I1, I2); RESULT.setLine(I1left); :};
+
+
+SquareBraces::= (SquareEmpty) {: RESULT=new SquareEmpty(); :}
+					|
+				(Square) LSQUAREBRACE RSQUAREBRACE {: RESULT=new Square(); :};
+				
+Statements::= (StatementsEmpty) {: RESULT=new StatementsEmpty(); :}
+					|
+			  (StatementsNotEmpty) Statements:S1 Statement:S2 {: RESULT=new StatementsNotEmpty(S1, S2); RESULT.setLine(S1left); :};
+
+Statement::= (StatementDesignator) DesignatorStatement:D1 SEMI {: RESULT=new StatementDesignator(D1); RESULT.setLine(D1left); :}
+					|
+			 (StatementRead) READ LPAREN Designator:D1 RPAREN SEMI {: RESULT=new StatementRead(D1); RESULT.setLine(D1left); :}
+			 		|
+			 (StatementPrint) PRINT LPAREN Expr:E1 Numbers:N2 RPAREN SEMI {: RESULT=new StatementPrint(E1, N2); RESULT.setLine(E1left); :}
+			 		|
+			 (ErrorStatements) error SEMI:l
+			 {: parser.report_error("Izvrsen oporavak do ; na liniji" + lleft, null); :} {: RESULT=new ErrorStatements(); :}
+			 		|
+			 (ErrorStmtComma) error COMMA:l 
+			 {: parser.report_error("Izvrsen oporavak do , na liniji" + lleft, null); :} {: RESULT=new ErrorStmtComma(); :};
+Numbers::= (NumbersEmpty) {: RESULT=new NumbersEmpty(); :}
+				|
+		   (NumbersNotEmpty) COMMA NUMBER:N1 {: RESULT=new NumbersNotEmpty(N1); RESULT.setLine(N1left); :};
+		   
+		   
+DesignatorStatement::= (DesignatorStatementAssign) Designator:D1 ASSIGMNET Expr:E2 {: RESULT=new DesignatorStatementAssign(D1, E2); RESULT.setLine(D1left); :}
+								|
+					   (DesigantorStatementsIncrement) Designator:D1 INCREMENT {: RESULT=new DesigantorStatementsIncrement(D1); RESULT.setLine(D1left); :}
+					   			|
+					   (DesigantorStatementsDecrement) Designator:D1 DECREMENT {: RESULT=new DesigantorStatementsDecrement(D1); RESULT.setLine(D1left); :};
+
+
+					   
+					   
+Expr::= (Expr) OptionalMinus:O1 TermAddition:T2 {: RESULT=new Expr(O1, T2); RESULT.setLine(O1left); :};
+OptionalMinus::= (OptionalMinusEmpty) Term:T1 {: RESULT=new OptionalMinusEmpty(T1); RESULT.setLine(T1left); :}
+					|
+				 (OptionalMinusNotEmpty) MINUS Term:T1 {: RESULT=new OptionalMinusNotEmpty(T1); RESULT.setLine(T1left); :};
+TermAddition::= (TermAdditionEmpty) {: RESULT=new TermAdditionEmpty(); :}
+						|
+				(TermAdditionNotEmpty) TermAddition:T1 AddOperand:A2 Term:T3 {: RESULT=new TermAdditionNotEmpty(T1, A2, T3); RESULT.setLine(T1left); :};
+AddOperand::= (AddOperandPlus) PLUS {: RESULT=new AddOperandPlus(); :}
+					|
+			  (AddOperandMinus) MINUS {: RESULT=new AddOperandMinus(); :};
+Term::=(Term) Factor:F1 OptionalMultiply:O2 {: RESULT=new Term(F1, O2); RESULT.setLine(F1left); :};
+
+Factor::= (FactorDesignator) Designator:D1 {: RESULT=new FactorDesignator(D1); RESULT.setLine(D1left); :}
+				|
+		  (FactorNum) NUMBER:N1 {: RESULT=new FactorNum(N1); RESULT.setLine(N1left); :}
+		  		|
+		  (FactorChar) CHAR:C1 {: RESULT=new FactorChar(C1); RESULT.setLine(C1left); :}
+		  		|
+		  (FactorBool) BOOL:B1 {: RESULT=new FactorBool(B1); RESULT.setLine(B1left); :}
+		  		|
+		  (FactorNewArray) NEW Type:T1 LSQUAREBRACE Expr:E2 RSQUAREBRACE {: RESULT=new FactorNewArray(T1, E2); RESULT.setLine(T1left); :}
+		  		|
+		  (FactorBraceExpr) LPAREN Expr:E1 RPAREN {: RESULT=new FactorBraceExpr(E1); RESULT.setLine(E1left); :}; 
+
+
+OptionalMultiply::= (OptionalMultiplyEmpty) {: RESULT=new OptionalMultiplyEmpty(); :}
+							|
+					(OptionalMultiplyNotEmpty) OptionalMultiply:O1 MultiplyOperand:M2 Factor:F3 {: RESULT=new OptionalMultiplyNotEmpty(O1, M2, F3); RESULT.setLine(O1left); :};
+					
+MultiplyOperand::= (MultiplyOperandMulptipy) MULTIPY {: RESULT=new MultiplyOperandMulptipy(); :}
+							|
+				   (MultiplyOperandDivide) DIVIDE {: RESULT=new MultiplyOperandDivide(); :}
+				   			|
+				   (MultiplyOperandModus) MODUS {: RESULT=new MultiplyOperandModus(); :};
+				   
+Designator::= (DesignatorNoIdent) IDENT:designatorName OptionalAccess:opAccess {: RESULT=new DesignatorNoIdent(designatorName, opAccess); RESULT.setLine(designatorNameleft); :}
+					|
+			  (DesignatorIdent) IDENT:namespaceName COLON COLON IDENT:designatorName OptionalAccess:O1 {: RESULT=new DesignatorIdent(namespaceName, designatorName, O1); RESULT.setLine(namespaceNameleft); :};
+
+OptionalAccess::= (OptionalAccessEmpty) {: RESULT=new OptionalAccessEmpty(); :}
+						|
+				  (OptionalAccessIndex) OptionalAccess:O1 LSQUAREBRACE Expr:E2 RSQUAREBRACE {: RESULT=new OptionalAccessIndex(O1, E2); RESULT.setLine(O1left); :}
+				  		|
+				  (OptionalAccessParam) OptionalAccess:O1 FULLSTOP IDENT:I2 {: RESULT=new OptionalAccessParam(O1, I2); RESULT.setLine(O1left); :} ;
+
+
+

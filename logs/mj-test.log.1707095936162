@@ -1,0 +1,1471 @@
+INFO  01:19:00,581 - Compiling source file: C:\Users\vamilutinovic\Desktop\PP\pp1lab.templateAST\pp1lab.templateAST\workspace\PP\test\program.mj
+INFO  01:19:00,785 - #2 program
+INFO  01:19:00,786 - #47 test301
+INFO  01:19:00,786 - #17 namespace
+INFO  01:19:00,786 - #47 Konstante
+INFO  01:19:00,786 - #41 {
+INFO  01:19:00,787 - #6 const
+INFO  01:19:00,787 - #47 int
+INFO  01:19:00,787 - #47 nula
+INFO  01:19:00,788 - #35 =
+INFO  01:19:00,788 - #45 0
+INFO  01:19:00,788 - #36 ;
+INFO  01:19:00,790 - #6 const
+INFO  01:19:00,792 - #47 int
+INFO  01:19:00,792 - #47 jedan
+INFO  01:19:00,793 - #35 =
+INFO  01:19:00,793 - #45 1
+INFO  01:19:00,793 - #36 ;
+INFO  01:19:00,793 - #6 const
+INFO  01:19:00,793 - #47 int
+INFO  01:19:00,793 - #47 pet
+INFO  01:19:00,815 - #35 =
+INFO  01:19:00,815 - #45 5
+INFO  01:19:00,815 - #36 ;
+INFO  01:19:00,815 - #41 {
+INFO  01:19:00,817 - #42 }
+INFO  01:19:00,817 - #42 }
+INFO  01:19:00,817 - #17 namespace
+INFO  01:19:00,819 - #47 Nizovi
+INFO  01:19:00,819 - #41 {
+INFO  01:19:00,819 - #47 int
+INFO  01:19:00,819 - #47 niz
+INFO  01:19:00,819 - #43 [
+INFO  01:19:00,819 - #44 ]
+INFO  01:19:00,819 - #36 ;
+INFO  01:19:00,823 - #47 char
+INFO  01:19:00,825 - #47 nizch
+INFO  01:19:00,826 - #43 [
+INFO  01:19:00,826 - #44 ]
+INFO  01:19:00,826 - #36 ;
+INFO  01:19:00,826 - #41 {
+INFO  01:19:00,826 - #42 }
+INFO  01:19:00,826 - #42 }
+INFO  01:19:00,826 - #47 int
+INFO  01:19:00,828 - #47 a
+INFO  01:19:00,829 - #36 ;
+INFO  01:19:00,831 - #41 {
+INFO  01:19:00,831 - #12 void
+INFO  01:19:00,831 - #47 main
+INFO  01:19:00,831 - #39 (
+INFO  01:19:00,831 - #40 )
+INFO  01:19:00,831 - #47 int
+INFO  01:19:00,833 - #47 bodovi
+INFO  01:19:00,833 - #36 ;
+INFO  01:19:00,833 - #47 bool
+INFO  01:19:00,834 - #47 bt
+INFO  01:19:00,834 - #36 ;
+INFO  01:19:00,834 - #41 {
+INFO  01:19:00,834 - #47 bodovi
+INFO  01:19:00,835 - #35 =
+INFO  01:19:00,838 - #45 0
+INFO  01:19:00,843 - #36 ;
+INFO  01:19:00,854 - #47 bodovi
+INFO  01:19:00,855 - #24 ++
+INFO  01:19:00,855 - #36 ;
+INFO  01:19:00,855 - #47 bodovi
+INFO  01:19:00,856 - #35 =
+INFO  01:19:00,856 - #47 bodovi
+INFO  01:19:00,856 - #28 +
+INFO  01:19:00,856 - #47 Konstante
+INFO  01:19:00,862 - #37 :
+INFO  01:19:00,862 - #37 :
+INFO  01:19:00,863 - #47 jedan
+INFO  01:19:00,863 - #36 ;
+INFO  01:19:00,864 - #47 bodovi
+INFO  01:19:00,864 - #35 =
+INFO  01:19:00,864 - #47 bodovi
+INFO  01:19:00,864 - #30 *
+INFO  01:19:00,864 - #47 Konstante
+INFO  01:19:00,870 - #37 :
+INFO  01:19:00,870 - #37 :
+INFO  01:19:00,871 - #47 pet
+INFO  01:19:00,871 - #36 ;
+INFO  01:19:00,871 - #47 bodovi
+INFO  01:19:00,871 - #25 --
+INFO  01:19:00,872 - #36 ;
+INFO  01:19:00,872 - #9 print
+INFO  01:19:00,872 - #39 (
+INFO  01:19:00,873 - #47 bodovi
+INFO  01:19:00,873 - #40 )
+INFO  01:19:00,876 - #36 ;
+INFO  01:19:00,876 - #47 Nizovi
+INFO  01:19:00,877 - #37 :
+INFO  01:19:00,877 - #37 :
+INFO  01:19:00,877 - #47 niz
+INFO  01:19:00,878 - #35 =
+INFO  01:19:00,878 - #8 new
+INFO  01:19:00,878 - #47 int
+INFO  01:19:00,878 - #43 [
+INFO  01:19:00,878 - #45 3
+INFO  01:19:00,879 - #44 ]
+INFO  01:19:00,879 - #36 ;
+INFO  01:19:00,879 - #47 Nizovi
+INFO  01:19:00,880 - #37 :
+INFO  01:19:00,880 - #37 :
+INFO  01:19:00,880 - #47 niz
+INFO  01:19:00,880 - #43 [
+INFO  01:19:00,880 - #47 Konstante
+INFO  01:19:00,881 - #37 :
+INFO  01:19:00,881 - #37 :
+INFO  01:19:00,881 - #47 nula
+INFO  01:19:00,881 - #44 ]
+INFO  01:19:00,882 - #35 =
+INFO  01:19:00,882 - #47 Konstante
+INFO  01:19:00,883 - #37 :
+INFO  01:19:00,883 - #37 :
+INFO  01:19:00,884 - #47 jedan
+INFO  01:19:00,884 - #36 ;
+INFO  01:19:00,885 - #47 Nizovi
+INFO  01:19:00,885 - #37 :
+INFO  01:19:00,885 - #37 :
+INFO  01:19:00,885 - #47 niz
+INFO  01:19:00,885 - #43 [
+INFO  01:19:00,886 - #45 1
+INFO  01:19:00,886 - #44 ]
+INFO  01:19:00,887 - #35 =
+INFO  01:19:00,888 - #45 2
+INFO  01:19:00,888 - #36 ;
+INFO  01:19:00,888 - #47 Nizovi
+INFO  01:19:00,889 - #37 :
+INFO  01:19:00,889 - #37 :
+INFO  01:19:00,889 - #47 niz
+INFO  01:19:00,889 - #43 [
+INFO  01:19:00,889 - #47 Nizovi
+INFO  01:19:00,890 - #37 :
+INFO  01:19:00,890 - #37 :
+INFO  01:19:00,890 - #47 niz
+INFO  01:19:00,890 - #43 [
+INFO  01:19:00,891 - #47 Konstante
+INFO  01:19:00,891 - #37 :
+INFO  01:19:00,892 - #37 :
+INFO  01:19:00,892 - #47 jedan
+INFO  01:19:00,892 - #44 ]
+INFO  01:19:00,892 - #44 ]
+INFO  01:19:00,892 - #35 =
+INFO  01:19:00,893 - #47 Nizovi
+INFO  01:19:00,893 - #37 :
+INFO  01:19:00,893 - #37 :
+INFO  01:19:00,893 - #47 niz
+INFO  01:19:00,893 - #43 [
+INFO  01:19:00,893 - #47 Nizovi
+INFO  01:19:00,894 - #37 :
+INFO  01:19:00,894 - #37 :
+INFO  01:19:00,894 - #47 niz
+INFO  01:19:00,894 - #43 [
+INFO  01:19:00,894 - #45 0
+INFO  01:19:00,895 - #44 ]
+INFO  01:19:00,896 - #44 ]
+INFO  01:19:00,896 - #30 *
+INFO  01:19:00,896 - #45 3
+INFO  01:19:00,896 - #36 ;
+INFO  01:19:00,896 - #47 bodovi
+INFO  01:19:00,897 - #35 =
+INFO  01:19:00,897 - #47 Nizovi
+INFO  01:19:00,897 - #37 :
+INFO  01:19:00,897 - #37 :
+INFO  01:19:00,897 - #47 niz
+INFO  01:19:00,897 - #43 [
+INFO  01:19:00,897 - #45 2
+INFO  01:19:00,898 - #44 ]
+INFO  01:19:00,898 - #31 /
+INFO  01:19:00,898 - #47 Nizovi
+INFO  01:19:00,902 - #37 :
+INFO  01:19:00,903 - #37 :
+INFO  01:19:00,903 - #47 niz
+INFO  01:19:00,903 - #43 [
+INFO  01:19:00,903 - #45 0
+INFO  01:19:00,903 - #44 ]
+INFO  01:19:00,904 - #36 ;
+INFO  01:19:00,904 - #9 print
+INFO  01:19:00,904 - #39 (
+INFO  01:19:00,904 - #47 bodovi
+INFO  01:19:00,904 - #40 )
+INFO  01:19:00,905 - #36 ;
+INFO  01:19:00,905 - #9 print
+INFO  01:19:00,905 - #39 (
+INFO  01:19:00,905 - #47 Nizovi
+INFO  01:19:00,905 - #37 :
+INFO  01:19:00,905 - #37 :
+INFO  01:19:00,906 - #47 niz
+INFO  01:19:00,906 - #43 [
+INFO  01:19:00,906 - #45 2
+INFO  01:19:00,906 - #44 ]
+INFO  01:19:00,907 - #40 )
+INFO  01:19:00,907 - #36 ;
+INFO  01:19:00,907 - #47 Nizovi
+INFO  01:19:00,908 - #37 :
+INFO  01:19:00,908 - #37 :
+INFO  01:19:00,908 - #47 nizch
+INFO  01:19:00,909 - #35 =
+INFO  01:19:00,909 - #8 new
+INFO  01:19:00,909 - #47 char
+INFO  01:19:00,909 - #43 [
+INFO  01:19:00,910 - #45 3
+INFO  01:19:00,912 - #44 ]
+INFO  01:19:00,913 - #36 ;
+INFO  01:19:00,913 - #47 Nizovi
+INFO  01:19:00,913 - #37 :
+INFO  01:19:00,914 - #37 :
+INFO  01:19:00,915 - #47 nizch
+INFO  01:19:00,915 - #43 [
+INFO  01:19:00,915 - #45 0
+INFO  01:19:00,915 - #44 ]
+INFO  01:19:00,915 - #35 =
+INFO  01:19:00,915 - #46 a
+INFO  01:19:00,916 - #36 ;
+INFO  01:19:00,917 - #47 Nizovi
+INFO  01:19:00,918 - #37 :
+INFO  01:19:00,918 - #37 :
+INFO  01:19:00,919 - #47 nizch
+INFO  01:19:00,919 - #43 [
+INFO  01:19:00,919 - #47 Konstante
+INFO  01:19:00,920 - #37 :
+INFO  01:19:00,920 - #37 :
+INFO  01:19:00,920 - #47 jedan
+INFO  01:19:00,920 - #44 ]
+INFO  01:19:00,920 - #35 =
+INFO  01:19:00,921 - #46 b
+INFO  01:19:00,921 - #36 ;
+INFO  01:19:00,921 - #47 Nizovi
+INFO  01:19:00,922 - #37 :
+INFO  01:19:00,922 - #37 :
+INFO  01:19:00,922 - #47 nizch
+INFO  01:19:00,922 - #43 [
+INFO  01:19:00,922 - #47 Konstante
+INFO  01:19:00,923 - #37 :
+INFO  01:19:00,923 - #37 :
+INFO  01:19:00,923 - #47 pet
+INFO  01:19:00,923 - #29 -
+INFO  01:19:00,924 - #45 3
+INFO  01:19:00,931 - #44 ]
+INFO  01:19:00,932 - #35 =
+INFO  01:19:00,932 - #46 c
+INFO  01:19:00,932 - #36 ;
+INFO  01:19:00,932 - #9 print
+INFO  01:19:00,933 - #39 (
+INFO  01:19:00,933 - #47 Nizovi
+INFO  01:19:00,933 - #37 :
+INFO  01:19:00,933 - #37 :
+INFO  01:19:00,933 - #47 nizch
+INFO  01:19:00,933 - #43 [
+INFO  01:19:00,934 - #45 1
+INFO  01:19:00,934 - #44 ]
+INFO  01:19:00,934 - #40 )
+INFO  01:19:00,934 - #36 ;
+INFO  01:19:00,935 - #9 print
+INFO  01:19:00,937 - #39 (
+INFO  01:19:00,937 - #47 Nizovi
+INFO  01:19:00,937 - #37 :
+INFO  01:19:00,937 - #37 :
+INFO  01:19:00,937 - #47 nizch
+INFO  01:19:00,937 - #43 [
+INFO  01:19:00,938 - #47 Konstante
+INFO  01:19:00,938 - #37 :
+INFO  01:19:00,939 - #37 :
+INFO  01:19:00,939 - #47 jedan
+INFO  01:19:00,939 - #30 *
+INFO  01:19:00,940 - #45 2
+INFO  01:19:00,940 - #44 ]
+INFO  01:19:00,941 - #40 )
+INFO  01:19:00,941 - #36 ;
+INFO  01:19:00,941 - #47 a
+INFO  01:19:00,942 - #35 =
+INFO  01:19:00,942 - #45 1
+INFO  01:19:00,943 - #36 ;
+INFO  01:19:00,944 - #10 read
+INFO  01:19:00,944 - #39 (
+INFO  01:19:00,944 - #47 bodovi
+INFO  01:19:00,944 - #40 )
+INFO  01:19:00,945 - #36 ;
+INFO  01:19:00,945 - #47 bodovi
+INFO  01:19:00,946 - #35 =
+INFO  01:19:00,946 - #29 -
+INFO  01:19:00,946 - #47 bodovi
+INFO  01:19:00,951 - #28 +
+INFO  01:19:00,951 - #39 (
+INFO  01:19:00,951 - #47 Konstante
+INFO  01:19:00,952 - #37 :
+INFO  01:19:00,952 - #37 :
+INFO  01:19:00,952 - #47 pet
+INFO  01:19:00,953 - #30 *
+INFO  01:19:00,953 - #47 a
+INFO  01:19:00,953 - #31 /
+INFO  01:19:00,953 - #45 2
+INFO  01:19:00,953 - #29 -
+INFO  01:19:00,954 - #47 Konstante
+INFO  01:19:00,954 - #37 :
+INFO  01:19:00,954 - #37 :
+INFO  01:19:00,954 - #47 jedan
+INFO  01:19:00,954 - #40 )
+INFO  01:19:00,954 - #30 *
+INFO  01:19:00,955 - #47 bodovi
+INFO  01:19:00,955 - #29 -
+INFO  01:19:00,955 - #39 (
+INFO  01:19:00,956 - #45 3
+INFO  01:19:00,956 - #32 %
+INFO  01:19:00,956 - #45 2
+INFO  01:19:00,961 - #28 +
+INFO  01:19:00,962 - #45 3
+INFO  01:19:00,962 - #30 *
+INFO  01:19:00,962 - #45 2
+INFO  01:19:00,962 - #29 -
+INFO  01:19:00,963 - #45 3
+INFO  01:19:00,963 - #40 )
+INFO  01:19:00,963 - #36 ;
+INFO  01:19:00,963 - #9 print
+INFO  01:19:00,963 - #39 (
+INFO  01:19:00,963 - #47 bodovi
+INFO  01:19:00,964 - #40 )
+INFO  01:19:00,964 - #36 ;
+INFO  01:19:00,964 - #42 }
+INFO  01:19:00,972 - #42 }
+INFO  01:19:00,998 - Program(
+ test301
+  NamespaceList(
+    Namespace(
+     Konstante
+      DeclarationsConst(
+        ConstDecl(
+          TypeOne(
+           int
+          ) [TypeOne]
+         nula
+          NumberConst(
+           0
+          ) [NumberConst]
+          ConstsEmpty(
+          ) [ConstsEmpty]
+        ) [ConstDecl]
+        DeclarationsConst(
+          ConstDecl(
+            TypeOne(
+             int
+            ) [TypeOne]
+           jedan
+            NumberConst(
+             1
+            ) [NumberConst]
+            ConstsEmpty(
+            ) [ConstsEmpty]
+          ) [ConstDecl]
+          DeclarationsConst(
+            ConstDecl(
+              TypeOne(
+               int
+              ) [TypeOne]
+             pet
+              NumberConst(
+               5
+              ) [NumberConst]
+              ConstsEmpty(
+              ) [ConstsEmpty]
+            ) [ConstDecl]
+            DeclarationsEmpty(
+            ) [DeclarationsEmpty]
+          ) [DeclarationsConst]
+        ) [DeclarationsConst]
+      ) [DeclarationsConst]
+    ) [Namespace]
+    NamespaceList(
+      Namespace(
+       Nizovi
+        DeclarationsVar(
+          VarDecl(
+            TypeOne(
+             int
+            ) [TypeOne]
+           niz
+            Square(
+            ) [Square]
+            VarsEmpty(
+            ) [VarsEmpty]
+          ) [VarDecl]
+          DeclarationsVar(
+            VarDecl(
+              TypeOne(
+               char
+              ) [TypeOne]
+             nizch
+              Square(
+              ) [Square]
+              VarsEmpty(
+              ) [VarsEmpty]
+            ) [VarDecl]
+            DeclarationsEmpty(
+            ) [DeclarationsEmpty]
+          ) [DeclarationsVar]
+        ) [DeclarationsVar]
+      ) [Namespace]
+      NamespaceEmpty(
+      ) [NamespaceEmpty]
+    ) [NamespaceList]
+  ) [NamespaceList]
+  DeclarationsVar(
+    VarDecl(
+      TypeOne(
+       int
+      ) [TypeOne]
+     a
+      SquareEmpty(
+      ) [SquareEmpty]
+      VarsEmpty(
+      ) [VarsEmpty]
+    ) [VarDecl]
+    DeclarationsEmpty(
+    ) [DeclarationsEmpty]
+  ) [DeclarationsVar]
+ main
+  VarDeclarationsNotEmpty(
+    VarDeclarationsNotEmpty(
+      VarDeclarationsEmpty(
+      ) [VarDeclarationsEmpty]
+      VarDecl(
+        TypeOne(
+         int
+        ) [TypeOne]
+       bodovi
+        SquareEmpty(
+        ) [SquareEmpty]
+        VarsEmpty(
+        ) [VarsEmpty]
+      ) [VarDecl]
+    ) [VarDeclarationsNotEmpty]
+    VarDecl(
+      TypeOne(
+       bool
+      ) [TypeOne]
+     bt
+      SquareEmpty(
+      ) [SquareEmpty]
+      VarsEmpty(
+      ) [VarsEmpty]
+    ) [VarDecl]
+  ) [VarDeclarationsNotEmpty]
+  StatementsNotEmpty(
+    StatementDesignator(
+      DesignatorStatementAssign(
+        DesignatorNoIdent(
+         bodovi
+          OptionalAccessEmpty(
+          ) [OptionalAccessEmpty]
+        ) [DesignatorNoIdent]
+        Expr(
+          OptionalMinusEmpty(
+          ) [OptionalMinusEmpty]
+          Term(
+            FactorNum(
+             0
+            ) [FactorNum]
+            OptionalMultiplyEmpty(
+            ) [OptionalMultiplyEmpty]
+          ) [Term]
+          TermAdditionEmpty(
+          ) [TermAdditionEmpty]
+        ) [Expr]
+      ) [DesignatorStatementAssign]
+    ) [StatementDesignator]
+    StatementsNotEmpty(
+      StatementDesignator(
+        DesigantorStatementsIncrement(
+          DesignatorNoIdent(
+           bodovi
+            OptionalAccessEmpty(
+            ) [OptionalAccessEmpty]
+          ) [DesignatorNoIdent]
+        ) [DesigantorStatementsIncrement]
+      ) [StatementDesignator]
+      StatementsNotEmpty(
+        StatementDesignator(
+          DesignatorStatementAssign(
+            DesignatorNoIdent(
+             bodovi
+              OptionalAccessEmpty(
+              ) [OptionalAccessEmpty]
+            ) [DesignatorNoIdent]
+            Expr(
+              OptionalMinusEmpty(
+              ) [OptionalMinusEmpty]
+              Term(
+                FactorDesignator(
+                  DesignatorNoIdent(
+                   bodovi
+                    OptionalAccessEmpty(
+                    ) [OptionalAccessEmpty]
+                  ) [DesignatorNoIdent]
+                ) [FactorDesignator]
+                OptionalMultiplyEmpty(
+                ) [OptionalMultiplyEmpty]
+              ) [Term]
+              TermAdditionNotEmpty(
+                AddOperandPlus(
+                ) [AddOperandPlus]
+                Term(
+                  FactorDesignator(
+                    DesignatorIdent(
+                     Konstante
+                     jedan
+                      OptionalAccessEmpty(
+                      ) [OptionalAccessEmpty]
+                    ) [DesignatorIdent]
+                  ) [FactorDesignator]
+                  OptionalMultiplyEmpty(
+                  ) [OptionalMultiplyEmpty]
+                ) [Term]
+                TermAdditionEmpty(
+                ) [TermAdditionEmpty]
+              ) [TermAdditionNotEmpty]
+            ) [Expr]
+          ) [DesignatorStatementAssign]
+        ) [StatementDesignator]
+        StatementsNotEmpty(
+          StatementDesignator(
+            DesignatorStatementAssign(
+              DesignatorNoIdent(
+               bodovi
+                OptionalAccessEmpty(
+                ) [OptionalAccessEmpty]
+              ) [DesignatorNoIdent]
+              Expr(
+                OptionalMinusEmpty(
+                ) [OptionalMinusEmpty]
+                Term(
+                  FactorDesignator(
+                    DesignatorNoIdent(
+                     bodovi
+                      OptionalAccessEmpty(
+                      ) [OptionalAccessEmpty]
+                    ) [DesignatorNoIdent]
+                  ) [FactorDesignator]
+                  OptionalMultiplyNotEmpty(
+                    MultiplyOperandMulptipy(
+                    ) [MultiplyOperandMulptipy]
+                    FactorDesignator(
+                      DesignatorIdent(
+                       Konstante
+                       pet
+                        OptionalAccessEmpty(
+                        ) [OptionalAccessEmpty]
+                      ) [DesignatorIdent]
+                    ) [FactorDesignator]
+                    OptionalMultiplyEmpty(
+                    ) [OptionalMultiplyEmpty]
+                  ) [OptionalMultiplyNotEmpty]
+                ) [Term]
+                TermAdditionEmpty(
+                ) [TermAdditionEmpty]
+              ) [Expr]
+            ) [DesignatorStatementAssign]
+          ) [StatementDesignator]
+          StatementsNotEmpty(
+            StatementDesignator(
+              DesigantorStatementsDecrement(
+                DesignatorNoIdent(
+                 bodovi
+                  OptionalAccessEmpty(
+                  ) [OptionalAccessEmpty]
+                ) [DesignatorNoIdent]
+              ) [DesigantorStatementsDecrement]
+            ) [StatementDesignator]
+            StatementsNotEmpty(
+              StatementPrint(
+                Expr(
+                  OptionalMinusEmpty(
+                  ) [OptionalMinusEmpty]
+                  Term(
+                    FactorDesignator(
+                      DesignatorNoIdent(
+                       bodovi
+                        OptionalAccessEmpty(
+                        ) [OptionalAccessEmpty]
+                      ) [DesignatorNoIdent]
+                    ) [FactorDesignator]
+                    OptionalMultiplyEmpty(
+                    ) [OptionalMultiplyEmpty]
+                  ) [Term]
+                  TermAdditionEmpty(
+                  ) [TermAdditionEmpty]
+                ) [Expr]
+                NumbersEmpty(
+                ) [NumbersEmpty]
+              ) [StatementPrint]
+              StatementsNotEmpty(
+                StatementDesignator(
+                  DesignatorStatementAssign(
+                    DesignatorIdent(
+                     Nizovi
+                     niz
+                      OptionalAccessEmpty(
+                      ) [OptionalAccessEmpty]
+                    ) [DesignatorIdent]
+                    Expr(
+                      OptionalMinusEmpty(
+                      ) [OptionalMinusEmpty]
+                      Term(
+                        FactorNewType(
+                          TypeOne(
+                           int
+                          ) [TypeOne]
+                          Expr(
+                            OptionalMinusEmpty(
+                            ) [OptionalMinusEmpty]
+                            Term(
+                              FactorNum(
+                               3
+                              ) [FactorNum]
+                              OptionalMultiplyEmpty(
+                              ) [OptionalMultiplyEmpty]
+                            ) [Term]
+                            TermAdditionEmpty(
+                            ) [TermAdditionEmpty]
+                          ) [Expr]
+                        ) [FactorNewType]
+                        OptionalMultiplyEmpty(
+                        ) [OptionalMultiplyEmpty]
+                      ) [Term]
+                      TermAdditionEmpty(
+                      ) [TermAdditionEmpty]
+                    ) [Expr]
+                  ) [DesignatorStatementAssign]
+                ) [StatementDesignator]
+                StatementsNotEmpty(
+                  StatementDesignator(
+                    DesignatorStatementAssign(
+                      DesignatorIdent(
+                       Nizovi
+                       niz
+                        OptionalAccessIndex(
+                          OptionalAccessEmpty(
+                          ) [OptionalAccessEmpty]
+                          Expr(
+                            OptionalMinusEmpty(
+                            ) [OptionalMinusEmpty]
+                            Term(
+                              FactorDesignator(
+                                DesignatorIdent(
+                                 Konstante
+                                 nula
+                                  OptionalAccessEmpty(
+                                  ) [OptionalAccessEmpty]
+                                ) [DesignatorIdent]
+                              ) [FactorDesignator]
+                              OptionalMultiplyEmpty(
+                              ) [OptionalMultiplyEmpty]
+                            ) [Term]
+                            TermAdditionEmpty(
+                            ) [TermAdditionEmpty]
+                          ) [Expr]
+                        ) [OptionalAccessIndex]
+                      ) [DesignatorIdent]
+                      Expr(
+                        OptionalMinusEmpty(
+                        ) [OptionalMinusEmpty]
+                        Term(
+                          FactorDesignator(
+                            DesignatorIdent(
+                             Konstante
+                             jedan
+                              OptionalAccessEmpty(
+                              ) [OptionalAccessEmpty]
+                            ) [DesignatorIdent]
+                          ) [FactorDesignator]
+                          OptionalMultiplyEmpty(
+                          ) [OptionalMultiplyEmpty]
+                        ) [Term]
+                        TermAdditionEmpty(
+                        ) [TermAdditionEmpty]
+                      ) [Expr]
+                    ) [DesignatorStatementAssign]
+                  ) [StatementDesignator]
+                  StatementsNotEmpty(
+                    StatementDesignator(
+                      DesignatorStatementAssign(
+                        DesignatorIdent(
+                         Nizovi
+                         niz
+                          OptionalAccessIndex(
+                            OptionalAccessEmpty(
+                            ) [OptionalAccessEmpty]
+                            Expr(
+                              OptionalMinusEmpty(
+                              ) [OptionalMinusEmpty]
+                              Term(
+                                FactorNum(
+                                 1
+                                ) [FactorNum]
+                                OptionalMultiplyEmpty(
+                                ) [OptionalMultiplyEmpty]
+                              ) [Term]
+                              TermAdditionEmpty(
+                              ) [TermAdditionEmpty]
+                            ) [Expr]
+                          ) [OptionalAccessIndex]
+                        ) [DesignatorIdent]
+                        Expr(
+                          OptionalMinusEmpty(
+                          ) [OptionalMinusEmpty]
+                          Term(
+                            FactorNum(
+                             2
+                            ) [FactorNum]
+                            OptionalMultiplyEmpty(
+                            ) [OptionalMultiplyEmpty]
+                          ) [Term]
+                          TermAdditionEmpty(
+                          ) [TermAdditionEmpty]
+                        ) [Expr]
+                      ) [DesignatorStatementAssign]
+                    ) [StatementDesignator]
+                    StatementsNotEmpty(
+                      StatementDesignator(
+                        DesignatorStatementAssign(
+                          DesignatorIdent(
+                           Nizovi
+                           niz
+                            OptionalAccessIndex(
+                              OptionalAccessEmpty(
+                              ) [OptionalAccessEmpty]
+                              Expr(
+                                OptionalMinusEmpty(
+                                ) [OptionalMinusEmpty]
+                                Term(
+                                  FactorDesignator(
+                                    DesignatorIdent(
+                                     Nizovi
+                                     niz
+                                      OptionalAccessIndex(
+                                        OptionalAccessEmpty(
+                                        ) [OptionalAccessEmpty]
+                                        Expr(
+                                          OptionalMinusEmpty(
+                                          ) [OptionalMinusEmpty]
+                                          Term(
+                                            FactorDesignator(
+                                              DesignatorIdent(
+                                               Konstante
+                                               jedan
+                                                OptionalAccessEmpty(
+                                                ) [OptionalAccessEmpty]
+                                              ) [DesignatorIdent]
+                                            ) [FactorDesignator]
+                                            OptionalMultiplyEmpty(
+                                            ) [OptionalMultiplyEmpty]
+                                          ) [Term]
+                                          TermAdditionEmpty(
+                                          ) [TermAdditionEmpty]
+                                        ) [Expr]
+                                      ) [OptionalAccessIndex]
+                                    ) [DesignatorIdent]
+                                  ) [FactorDesignator]
+                                  OptionalMultiplyEmpty(
+                                  ) [OptionalMultiplyEmpty]
+                                ) [Term]
+                                TermAdditionEmpty(
+                                ) [TermAdditionEmpty]
+                              ) [Expr]
+                            ) [OptionalAccessIndex]
+                          ) [DesignatorIdent]
+                          Expr(
+                            OptionalMinusEmpty(
+                            ) [OptionalMinusEmpty]
+                            Term(
+                              FactorDesignator(
+                                DesignatorIdent(
+                                 Nizovi
+                                 niz
+                                  OptionalAccessIndex(
+                                    OptionalAccessEmpty(
+                                    ) [OptionalAccessEmpty]
+                                    Expr(
+                                      OptionalMinusEmpty(
+                                      ) [OptionalMinusEmpty]
+                                      Term(
+                                        FactorDesignator(
+                                          DesignatorIdent(
+                                           Nizovi
+                                           niz
+                                            OptionalAccessIndex(
+                                              OptionalAccessEmpty(
+                                              ) [OptionalAccessEmpty]
+                                              Expr(
+                                                OptionalMinusEmpty(
+                                                ) [OptionalMinusEmpty]
+                                                Term(
+                                                  FactorNum(
+                                                   0
+                                                  ) [FactorNum]
+                                                  OptionalMultiplyEmpty(
+                                                  ) [OptionalMultiplyEmpty]
+                                                ) [Term]
+                                                TermAdditionEmpty(
+                                                ) [TermAdditionEmpty]
+                                              ) [Expr]
+                                            ) [OptionalAccessIndex]
+                                          ) [DesignatorIdent]
+                                        ) [FactorDesignator]
+                                        OptionalMultiplyEmpty(
+                                        ) [OptionalMultiplyEmpty]
+                                      ) [Term]
+                                      TermAdditionEmpty(
+                                      ) [TermAdditionEmpty]
+                                    ) [Expr]
+                                  ) [OptionalAccessIndex]
+                                ) [DesignatorIdent]
+                              ) [FactorDesignator]
+                              OptionalMultiplyNotEmpty(
+                                MultiplyOperandMulptipy(
+                                ) [MultiplyOperandMulptipy]
+                                FactorNum(
+                                 3
+                                ) [FactorNum]
+                                OptionalMultiplyEmpty(
+                                ) [OptionalMultiplyEmpty]
+                              ) [OptionalMultiplyNotEmpty]
+                            ) [Term]
+                            TermAdditionEmpty(
+                            ) [TermAdditionEmpty]
+                          ) [Expr]
+                        ) [DesignatorStatementAssign]
+                      ) [StatementDesignator]
+                      StatementsNotEmpty(
+                        StatementDesignator(
+                          DesignatorStatementAssign(
+                            DesignatorNoIdent(
+                             bodovi
+                              OptionalAccessEmpty(
+                              ) [OptionalAccessEmpty]
+                            ) [DesignatorNoIdent]
+                            Expr(
+                              OptionalMinusEmpty(
+                              ) [OptionalMinusEmpty]
+                              Term(
+                                FactorDesignator(
+                                  DesignatorIdent(
+                                   Nizovi
+                                   niz
+                                    OptionalAccessIndex(
+                                      OptionalAccessEmpty(
+                                      ) [OptionalAccessEmpty]
+                                      Expr(
+                                        OptionalMinusEmpty(
+                                        ) [OptionalMinusEmpty]
+                                        Term(
+                                          FactorNum(
+                                           2
+                                          ) [FactorNum]
+                                          OptionalMultiplyEmpty(
+                                          ) [OptionalMultiplyEmpty]
+                                        ) [Term]
+                                        TermAdditionEmpty(
+                                        ) [TermAdditionEmpty]
+                                      ) [Expr]
+                                    ) [OptionalAccessIndex]
+                                  ) [DesignatorIdent]
+                                ) [FactorDesignator]
+                                OptionalMultiplyNotEmpty(
+                                  MultiplyOperandDivide(
+                                  ) [MultiplyOperandDivide]
+                                  FactorDesignator(
+                                    DesignatorIdent(
+                                     Nizovi
+                                     niz
+                                      OptionalAccessIndex(
+                                        OptionalAccessEmpty(
+                                        ) [OptionalAccessEmpty]
+                                        Expr(
+                                          OptionalMinusEmpty(
+                                          ) [OptionalMinusEmpty]
+                                          Term(
+                                            FactorNum(
+                                             0
+                                            ) [FactorNum]
+                                            OptionalMultiplyEmpty(
+                                            ) [OptionalMultiplyEmpty]
+                                          ) [Term]
+                                          TermAdditionEmpty(
+                                          ) [TermAdditionEmpty]
+                                        ) [Expr]
+                                      ) [OptionalAccessIndex]
+                                    ) [DesignatorIdent]
+                                  ) [FactorDesignator]
+                                  OptionalMultiplyEmpty(
+                                  ) [OptionalMultiplyEmpty]
+                                ) [OptionalMultiplyNotEmpty]
+                              ) [Term]
+                              TermAdditionEmpty(
+                              ) [TermAdditionEmpty]
+                            ) [Expr]
+                          ) [DesignatorStatementAssign]
+                        ) [StatementDesignator]
+                        StatementsNotEmpty(
+                          StatementPrint(
+                            Expr(
+                              OptionalMinusEmpty(
+                              ) [OptionalMinusEmpty]
+                              Term(
+                                FactorDesignator(
+                                  DesignatorNoIdent(
+                                   bodovi
+                                    OptionalAccessEmpty(
+                                    ) [OptionalAccessEmpty]
+                                  ) [DesignatorNoIdent]
+                                ) [FactorDesignator]
+                                OptionalMultiplyEmpty(
+                                ) [OptionalMultiplyEmpty]
+                              ) [Term]
+                              TermAdditionEmpty(
+                              ) [TermAdditionEmpty]
+                            ) [Expr]
+                            NumbersEmpty(
+                            ) [NumbersEmpty]
+                          ) [StatementPrint]
+                          StatementsNotEmpty(
+                            StatementPrint(
+                              Expr(
+                                OptionalMinusEmpty(
+                                ) [OptionalMinusEmpty]
+                                Term(
+                                  FactorDesignator(
+                                    DesignatorIdent(
+                                     Nizovi
+                                     niz
+                                      OptionalAccessIndex(
+                                        OptionalAccessEmpty(
+                                        ) [OptionalAccessEmpty]
+                                        Expr(
+                                          OptionalMinusEmpty(
+                                          ) [OptionalMinusEmpty]
+                                          Term(
+                                            FactorNum(
+                                             2
+                                            ) [FactorNum]
+                                            OptionalMultiplyEmpty(
+                                            ) [OptionalMultiplyEmpty]
+                                          ) [Term]
+                                          TermAdditionEmpty(
+                                          ) [TermAdditionEmpty]
+                                        ) [Expr]
+                                      ) [OptionalAccessIndex]
+                                    ) [DesignatorIdent]
+                                  ) [FactorDesignator]
+                                  OptionalMultiplyEmpty(
+                                  ) [OptionalMultiplyEmpty]
+                                ) [Term]
+                                TermAdditionEmpty(
+                                ) [TermAdditionEmpty]
+                              ) [Expr]
+                              NumbersEmpty(
+                              ) [NumbersEmpty]
+                            ) [StatementPrint]
+                            StatementsNotEmpty(
+                              StatementDesignator(
+                                DesignatorStatementAssign(
+                                  DesignatorIdent(
+                                   Nizovi
+                                   nizch
+                                    OptionalAccessEmpty(
+                                    ) [OptionalAccessEmpty]
+                                  ) [DesignatorIdent]
+                                  Expr(
+                                    OptionalMinusEmpty(
+                                    ) [OptionalMinusEmpty]
+                                    Term(
+                                      FactorNewType(
+                                        TypeOne(
+                                         char
+                                        ) [TypeOne]
+                                        Expr(
+                                          OptionalMinusEmpty(
+                                          ) [OptionalMinusEmpty]
+                                          Term(
+                                            FactorNum(
+                                             3
+                                            ) [FactorNum]
+                                            OptionalMultiplyEmpty(
+                                            ) [OptionalMultiplyEmpty]
+                                          ) [Term]
+                                          TermAdditionEmpty(
+                                          ) [TermAdditionEmpty]
+                                        ) [Expr]
+                                      ) [FactorNewType]
+                                      OptionalMultiplyEmpty(
+                                      ) [OptionalMultiplyEmpty]
+                                    ) [Term]
+                                    TermAdditionEmpty(
+                                    ) [TermAdditionEmpty]
+                                  ) [Expr]
+                                ) [DesignatorStatementAssign]
+                              ) [StatementDesignator]
+                              StatementsNotEmpty(
+                                StatementDesignator(
+                                  DesignatorStatementAssign(
+                                    DesignatorIdent(
+                                     Nizovi
+                                     nizch
+                                      OptionalAccessIndex(
+                                        OptionalAccessEmpty(
+                                        ) [OptionalAccessEmpty]
+                                        Expr(
+                                          OptionalMinusEmpty(
+                                          ) [OptionalMinusEmpty]
+                                          Term(
+                                            FactorNum(
+                                             0
+                                            ) [FactorNum]
+                                            OptionalMultiplyEmpty(
+                                            ) [OptionalMultiplyEmpty]
+                                          ) [Term]
+                                          TermAdditionEmpty(
+                                          ) [TermAdditionEmpty]
+                                        ) [Expr]
+                                      ) [OptionalAccessIndex]
+                                    ) [DesignatorIdent]
+                                    Expr(
+                                      OptionalMinusEmpty(
+                                      ) [OptionalMinusEmpty]
+                                      Term(
+                                        FactorChar(
+                                         a
+                                        ) [FactorChar]
+                                        OptionalMultiplyEmpty(
+                                        ) [OptionalMultiplyEmpty]
+                                      ) [Term]
+                                      TermAdditionEmpty(
+                                      ) [TermAdditionEmpty]
+                                    ) [Expr]
+                                  ) [DesignatorStatementAssign]
+                                ) [StatementDesignator]
+                                StatementsNotEmpty(
+                                  StatementDesignator(
+                                    DesignatorStatementAssign(
+                                      DesignatorIdent(
+                                       Nizovi
+                                       nizch
+                                        OptionalAccessIndex(
+                                          OptionalAccessEmpty(
+                                          ) [OptionalAccessEmpty]
+                                          Expr(
+                                            OptionalMinusEmpty(
+                                            ) [OptionalMinusEmpty]
+                                            Term(
+                                              FactorDesignator(
+                                                DesignatorIdent(
+                                                 Konstante
+                                                 jedan
+                                                  OptionalAccessEmpty(
+                                                  ) [OptionalAccessEmpty]
+                                                ) [DesignatorIdent]
+                                              ) [FactorDesignator]
+                                              OptionalMultiplyEmpty(
+                                              ) [OptionalMultiplyEmpty]
+                                            ) [Term]
+                                            TermAdditionEmpty(
+                                            ) [TermAdditionEmpty]
+                                          ) [Expr]
+                                        ) [OptionalAccessIndex]
+                                      ) [DesignatorIdent]
+                                      Expr(
+                                        OptionalMinusEmpty(
+                                        ) [OptionalMinusEmpty]
+                                        Term(
+                                          FactorChar(
+                                           b
+                                          ) [FactorChar]
+                                          OptionalMultiplyEmpty(
+                                          ) [OptionalMultiplyEmpty]
+                                        ) [Term]
+                                        TermAdditionEmpty(
+                                        ) [TermAdditionEmpty]
+                                      ) [Expr]
+                                    ) [DesignatorStatementAssign]
+                                  ) [StatementDesignator]
+                                  StatementsNotEmpty(
+                                    StatementDesignator(
+                                      DesignatorStatementAssign(
+                                        DesignatorIdent(
+                                         Nizovi
+                                         nizch
+                                          OptionalAccessIndex(
+                                            OptionalAccessEmpty(
+                                            ) [OptionalAccessEmpty]
+                                            Expr(
+                                              OptionalMinusEmpty(
+                                              ) [OptionalMinusEmpty]
+                                              Term(
+                                                FactorDesignator(
+                                                  DesignatorIdent(
+                                                   Konstante
+                                                   pet
+                                                    OptionalAccessEmpty(
+                                                    ) [OptionalAccessEmpty]
+                                                  ) [DesignatorIdent]
+                                                ) [FactorDesignator]
+                                                OptionalMultiplyEmpty(
+                                                ) [OptionalMultiplyEmpty]
+                                              ) [Term]
+                                              TermAdditionNotEmpty(
+                                                AddOperandMinus(
+                                                ) [AddOperandMinus]
+                                                Term(
+                                                  FactorNum(
+                                                   3
+                                                  ) [FactorNum]
+                                                  OptionalMultiplyEmpty(
+                                                  ) [OptionalMultiplyEmpty]
+                                                ) [Term]
+                                                TermAdditionEmpty(
+                                                ) [TermAdditionEmpty]
+                                              ) [TermAdditionNotEmpty]
+                                            ) [Expr]
+                                          ) [OptionalAccessIndex]
+                                        ) [DesignatorIdent]
+                                        Expr(
+                                          OptionalMinusEmpty(
+                                          ) [OptionalMinusEmpty]
+                                          Term(
+                                            FactorChar(
+                                             c
+                                            ) [FactorChar]
+                                            OptionalMultiplyEmpty(
+                                            ) [OptionalMultiplyEmpty]
+                                          ) [Term]
+                                          TermAdditionEmpty(
+                                          ) [TermAdditionEmpty]
+                                        ) [Expr]
+                                      ) [DesignatorStatementAssign]
+                                    ) [StatementDesignator]
+                                    StatementsNotEmpty(
+                                      StatementPrint(
+                                        Expr(
+                                          OptionalMinusEmpty(
+                                          ) [OptionalMinusEmpty]
+                                          Term(
+                                            FactorDesignator(
+                                              DesignatorIdent(
+                                               Nizovi
+                                               nizch
+                                                OptionalAccessIndex(
+                                                  OptionalAccessEmpty(
+                                                  ) [OptionalAccessEmpty]
+                                                  Expr(
+                                                    OptionalMinusEmpty(
+                                                    ) [OptionalMinusEmpty]
+                                                    Term(
+                                                      FactorNum(
+                                                       1
+                                                      ) [FactorNum]
+                                                      OptionalMultiplyEmpty(
+                                                      ) [OptionalMultiplyEmpty]
+                                                    ) [Term]
+                                                    TermAdditionEmpty(
+                                                    ) [TermAdditionEmpty]
+                                                  ) [Expr]
+                                                ) [OptionalAccessIndex]
+                                              ) [DesignatorIdent]
+                                            ) [FactorDesignator]
+                                            OptionalMultiplyEmpty(
+                                            ) [OptionalMultiplyEmpty]
+                                          ) [Term]
+                                          TermAdditionEmpty(
+                                          ) [TermAdditionEmpty]
+                                        ) [Expr]
+                                        NumbersEmpty(
+                                        ) [NumbersEmpty]
+                                      ) [StatementPrint]
+                                      StatementsNotEmpty(
+                                        StatementPrint(
+                                          Expr(
+                                            OptionalMinusEmpty(
+                                            ) [OptionalMinusEmpty]
+                                            Term(
+                                              FactorDesignator(
+                                                DesignatorIdent(
+                                                 Nizovi
+                                                 nizch
+                                                  OptionalAccessIndex(
+                                                    OptionalAccessEmpty(
+                                                    ) [OptionalAccessEmpty]
+                                                    Expr(
+                                                      OptionalMinusEmpty(
+                                                      ) [OptionalMinusEmpty]
+                                                      Term(
+                                                        FactorDesignator(
+                                                          DesignatorIdent(
+                                                           Konstante
+                                                           jedan
+                                                            OptionalAccessEmpty(
+                                                            ) [OptionalAccessEmpty]
+                                                          ) [DesignatorIdent]
+                                                        ) [FactorDesignator]
+                                                        OptionalMultiplyNotEmpty(
+                                                          MultiplyOperandMulptipy(
+                                                          ) [MultiplyOperandMulptipy]
+                                                          FactorNum(
+                                                           2
+                                                          ) [FactorNum]
+                                                          OptionalMultiplyEmpty(
+                                                          ) [OptionalMultiplyEmpty]
+                                                        ) [OptionalMultiplyNotEmpty]
+                                                      ) [Term]
+                                                      TermAdditionEmpty(
+                                                      ) [TermAdditionEmpty]
+                                                    ) [Expr]
+                                                  ) [OptionalAccessIndex]
+                                                ) [DesignatorIdent]
+                                              ) [FactorDesignator]
+                                              OptionalMultiplyEmpty(
+                                              ) [OptionalMultiplyEmpty]
+                                            ) [Term]
+                                            TermAdditionEmpty(
+                                            ) [TermAdditionEmpty]
+                                          ) [Expr]
+                                          NumbersEmpty(
+                                          ) [NumbersEmpty]
+                                        ) [StatementPrint]
+                                        StatementsNotEmpty(
+                                          StatementDesignator(
+                                            DesignatorStatementAssign(
+                                              DesignatorNoIdent(
+                                               a
+                                                OptionalAccessEmpty(
+                                                ) [OptionalAccessEmpty]
+                                              ) [DesignatorNoIdent]
+                                              Expr(
+                                                OptionalMinusEmpty(
+                                                ) [OptionalMinusEmpty]
+                                                Term(
+                                                  FactorNum(
+                                                   1
+                                                  ) [FactorNum]
+                                                  OptionalMultiplyEmpty(
+                                                  ) [OptionalMultiplyEmpty]
+                                                ) [Term]
+                                                TermAdditionEmpty(
+                                                ) [TermAdditionEmpty]
+                                              ) [Expr]
+                                            ) [DesignatorStatementAssign]
+                                          ) [StatementDesignator]
+                                          StatementsNotEmpty(
+                                            StatementRead(
+                                              DesignatorNoIdent(
+                                               bodovi
+                                                OptionalAccessEmpty(
+                                                ) [OptionalAccessEmpty]
+                                              ) [DesignatorNoIdent]
+                                            ) [StatementRead]
+                                            StatementsNotEmpty(
+                                              StatementDesignator(
+                                                DesignatorStatementAssign(
+                                                  DesignatorNoIdent(
+                                                   bodovi
+                                                    OptionalAccessEmpty(
+                                                    ) [OptionalAccessEmpty]
+                                                  ) [DesignatorNoIdent]
+                                                  Expr(
+                                                    OptionalMinusNotEmpty(
+                                                    ) [OptionalMinusNotEmpty]
+                                                    Term(
+                                                      FactorDesignator(
+                                                        DesignatorNoIdent(
+                                                         bodovi
+                                                          OptionalAccessEmpty(
+                                                          ) [OptionalAccessEmpty]
+                                                        ) [DesignatorNoIdent]
+                                                      ) [FactorDesignator]
+                                                      OptionalMultiplyEmpty(
+                                                      ) [OptionalMultiplyEmpty]
+                                                    ) [Term]
+                                                    TermAdditionNotEmpty(
+                                                      AddOperandPlus(
+                                                      ) [AddOperandPlus]
+                                                      Term(
+                                                        FactorBraceExpr(
+                                                          Expr(
+                                                            OptionalMinusEmpty(
+                                                            ) [OptionalMinusEmpty]
+                                                            Term(
+                                                              FactorDesignator(
+                                                                DesignatorIdent(
+                                                                 Konstante
+                                                                 pet
+                                                                  OptionalAccessEmpty(
+                                                                  ) [OptionalAccessEmpty]
+                                                                ) [DesignatorIdent]
+                                                              ) [FactorDesignator]
+                                                              OptionalMultiplyNotEmpty(
+                                                                MultiplyOperandMulptipy(
+                                                                ) [MultiplyOperandMulptipy]
+                                                                FactorDesignator(
+                                                                  DesignatorNoIdent(
+                                                                   a
+                                                                    OptionalAccessEmpty(
+                                                                    ) [OptionalAccessEmpty]
+                                                                  ) [DesignatorNoIdent]
+                                                                ) [FactorDesignator]
+                                                                OptionalMultiplyNotEmpty(
+                                                                  MultiplyOperandDivide(
+                                                                  ) [MultiplyOperandDivide]
+                                                                  FactorNum(
+                                                                   2
+                                                                  ) [FactorNum]
+                                                                  OptionalMultiplyEmpty(
+                                                                  ) [OptionalMultiplyEmpty]
+                                                                ) [OptionalMultiplyNotEmpty]
+                                                              ) [OptionalMultiplyNotEmpty]
+                                                            ) [Term]
+                                                            TermAdditionNotEmpty(
+                                                              AddOperandMinus(
+                                                              ) [AddOperandMinus]
+                                                              Term(
+                                                                FactorDesignator(
+                                                                  DesignatorIdent(
+                                                                   Konstante
+                                                                   jedan
+                                                                    OptionalAccessEmpty(
+                                                                    ) [OptionalAccessEmpty]
+                                                                  ) [DesignatorIdent]
+                                                                ) [FactorDesignator]
+                                                                OptionalMultiplyEmpty(
+                                                                ) [OptionalMultiplyEmpty]
+                                                              ) [Term]
+                                                              TermAdditionEmpty(
+                                                              ) [TermAdditionEmpty]
+                                                            ) [TermAdditionNotEmpty]
+                                                          ) [Expr]
+                                                        ) [FactorBraceExpr]
+                                                        OptionalMultiplyNotEmpty(
+                                                          MultiplyOperandMulptipy(
+                                                          ) [MultiplyOperandMulptipy]
+                                                          FactorDesignator(
+                                                            DesignatorNoIdent(
+                                                             bodovi
+                                                              OptionalAccessEmpty(
+                                                              ) [OptionalAccessEmpty]
+                                                            ) [DesignatorNoIdent]
+                                                          ) [FactorDesignator]
+                                                          OptionalMultiplyEmpty(
+                                                          ) [OptionalMultiplyEmpty]
+                                                        ) [OptionalMultiplyNotEmpty]
+                                                      ) [Term]
+                                                      TermAdditionNotEmpty(
+                                                        AddOperandMinus(
+                                                        ) [AddOperandMinus]
+                                                        Term(
+                                                          FactorBraceExpr(
+                                                            Expr(
+                                                              OptionalMinusEmpty(
+                                                              ) [OptionalMinusEmpty]
+                                                              Term(
+                                                                FactorNum(
+                                                                 3
+                                                                ) [FactorNum]
+                                                                OptionalMultiplyNotEmpty(
+                                                                  MultiplyOperandModus(
+                                                                  ) [MultiplyOperandModus]
+                                                                  FactorNum(
+                                                                   2
+                                                                  ) [FactorNum]
+                                                                  OptionalMultiplyEmpty(
+                                                                  ) [OptionalMultiplyEmpty]
+                                                                ) [OptionalMultiplyNotEmpty]
+                                                              ) [Term]
+                                                              TermAdditionNotEmpty(
+                                                                AddOperandPlus(
+                                                                ) [AddOperandPlus]
+                                                                Term(
+                                                                  FactorNum(
+                                                                   3
+                                                                  ) [FactorNum]
+                                                                  OptionalMultiplyNotEmpty(
+                                                                    MultiplyOperandMulptipy(
+                                                                    ) [MultiplyOperandMulptipy]
+                                                                    FactorNum(
+                                                                     2
+                                                                    ) [FactorNum]
+                                                                    OptionalMultiplyEmpty(
+                                                                    ) [OptionalMultiplyEmpty]
+                                                                  ) [OptionalMultiplyNotEmpty]
+                                                                ) [Term]
+                                                                TermAdditionNotEmpty(
+                                                                  AddOperandMinus(
+                                                                  ) [AddOperandMinus]
+                                                                  Term(
+                                                                    FactorNum(
+                                                                     3
+                                                                    ) [FactorNum]
+                                                                    OptionalMultiplyEmpty(
+                                                                    ) [OptionalMultiplyEmpty]
+                                                                  ) [Term]
+                                                                  TermAdditionEmpty(
+                                                                  ) [TermAdditionEmpty]
+                                                                ) [TermAdditionNotEmpty]
+                                                              ) [TermAdditionNotEmpty]
+                                                            ) [Expr]
+                                                          ) [FactorBraceExpr]
+                                                          OptionalMultiplyEmpty(
+                                                          ) [OptionalMultiplyEmpty]
+                                                        ) [Term]
+                                                        TermAdditionEmpty(
+                                                        ) [TermAdditionEmpty]
+                                                      ) [TermAdditionNotEmpty]
+                                                    ) [TermAdditionNotEmpty]
+                                                  ) [Expr]
+                                                ) [DesignatorStatementAssign]
+                                              ) [StatementDesignator]
+                                              StatementsNotEmpty(
+                                                StatementPrint(
+                                                  Expr(
+                                                    OptionalMinusEmpty(
+                                                    ) [OptionalMinusEmpty]
+                                                    Term(
+                                                      FactorDesignator(
+                                                        DesignatorNoIdent(
+                                                         bodovi
+                                                          OptionalAccessEmpty(
+                                                          ) [OptionalAccessEmpty]
+                                                        ) [DesignatorNoIdent]
+                                                      ) [FactorDesignator]
+                                                      OptionalMultiplyEmpty(
+                                                      ) [OptionalMultiplyEmpty]
+                                                    ) [Term]
+                                                    TermAdditionEmpty(
+                                                    ) [TermAdditionEmpty]
+                                                  ) [Expr]
+                                                  NumbersEmpty(
+                                                  ) [NumbersEmpty]
+                                                ) [StatementPrint]
+                                                StatementsEmpty(
+                                                ) [StatementsEmpty]
+                                              ) [StatementsNotEmpty]
+                                            ) [StatementsNotEmpty]
+                                          ) [StatementsNotEmpty]
+                                        ) [StatementsNotEmpty]
+                                      ) [StatementsNotEmpty]
+                                    ) [StatementsNotEmpty]
+                                  ) [StatementsNotEmpty]
+                                ) [StatementsNotEmpty]
+                              ) [StatementsNotEmpty]
+                            ) [StatementsNotEmpty]
+                          ) [StatementsNotEmpty]
+                        ) [StatementsNotEmpty]
+                      ) [StatementsNotEmpty]
+                    ) [StatementsNotEmpty]
+                  ) [StatementsNotEmpty]
+                ) [StatementsNotEmpty]
+              ) [StatementsNotEmpty]
+            ) [StatementsNotEmpty]
+          ) [StatementsNotEmpty]
+        ) [StatementsNotEmpty]
+      ) [StatementsNotEmpty]
+    ) [StatementsNotEmpty]
+  ) [StatementsNotEmpty]
+) [Program]
+INFO  01:19:01,012 - ===================================
+INFO  01:19:01,023 - Print prepoznat!!!
+INFO  01:19:01,023 - Print prepoznat!!!
+INFO  01:19:01,024 - Print prepoznat!!!
+INFO  01:19:01,024 - Print prepoznat!!!
+INFO  01:19:01,024 - Print prepoznat!!!
+INFO  01:19:01,024 - Print prepoznat!!!
+INFO  01:19:01,024 -  Print count calls = 6
+INFO  01:19:01,024 - ===================================

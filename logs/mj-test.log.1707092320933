@@ -1,0 +1,14 @@
+INFO  01:14:04,827 - Compiling source file: C:\Users\vamilutinovic\Desktop\PP\pp1lab.templateAST\pp1lab.templateAST\workspace\PP\test\program.mj
+INFO  01:14:04,955 - #2 program
+INFO  01:14:04,955 - #47 test301
+INFO  01:14:04,955 - #17 namespace
+INFO  01:14:04,955 - #47 Konstante
+INFO  01:14:04,955 - #41 {
+INFO  01:14:04,955 - #6 const
+INFO  01:14:04,955 - #47 int
+INFO  01:14:04,955 - #47 nula
+INFO  01:14:04,955 - #35 =
+INFO  01:14:04,956 - #45 0
+ERROR 01:14:04,956 - 
+Sintaksna greska na liniji 6
+ERROR 01:14:04,956 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 6

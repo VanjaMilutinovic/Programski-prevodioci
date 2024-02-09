@@ -1,0 +1,209 @@
+package rs.ac.bg.etf.pp1;
+
+import java_cup.runtime.*;
+import org.apache.log4j.*;
+
+import java.io.*;
+import rs.ac.bg.etf.pp1.ast.*;
+
+
+parser code {:
+	
+	boolean errorDetected = false;
+	
+	Logger log = Logger.getLogger(getClass());
+   
+   
+    // slede redefinisani metodi za prijavu gresaka radi izmene teksta poruke
+     
+    public void report_fatal_error(String message, Object info) throws java.lang.Exception {
+      done_parsing();
+      report_error(message, info);
+    }
+  
+    public void syntax_error(Symbol cur_token) {
+        report_error("\nSintaksna greska", cur_token);
+    }
+  
+    public void unrecovered_syntax_error(Symbol cur_token) throws java.lang.Exception {
+        report_fatal_error("Fatalna greska, parsiranje se ne moze nastaviti", cur_token);
+    }
+
+    public void report_error(String message, Object info) {
+    	errorDetected = true;
+    	StringBuilder msg = new StringBuilder(message); 
+    	if (info instanceof Symbol)
+            msg.append (" na liniji ").append(((Symbol)info).left);
+        log.error(msg.toString());
+    }
+    
+    public void report_info(String message, Object info) {
+    	StringBuilder msg = new StringBuilder(message); 
+    	if (info instanceof Symbol)
+            msg.append (" na liniji ").append(((Symbol)info).left);
+        log.info(msg.toString());
+    }
+    
+:}
+
+scan with {:
+	Symbol s = this.getScanner().next_token();
+	if (s != null && s.value != null) 
+		log.info(s.toString() + " " + s.value.toString());
+	return s;
+:}
+
+
+terminal PROG, BREAK, CLASS, ELSE, MAIN, CONST, IF, NEW, PRINT, READ, RETURN, VOID, EXTENDS, CONTINUE, FOR, STATIC, NAMESPACE, EQUAL, NOT_EQUAL, GREATER_OR_EQUAL, LESS_OR_EQUAL, AND, OR, INCREMENT, DECREMENT, FULLSTOP, ACCESS, PLUS, MINUS, MULTIPY, DIVIDE, MODUS, GREATER, LESS, ASSIGMNET, SEMI, COLON, COMMA, LPAREN, RPAREN, LBRACE, RBRACE, LSQUAREBRACE, RSQUAREBRACE;
+terminal Integer NUMBER;
+terminal Character CHAR;
+terminal String IDENT;
+terminal Boolean BOOL;
+
+
+nonterminal rs.etf.pp1.symboltable.concepts.Obj Program, ProgName, Namespaces, Namespace, NamespaceName, ConstDecl, MainLabel, MainBody, Designator;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, Term, TermAddition, Expr, Factor, OptionalAccess, OptionalMultiply;
+nonterminal Declarations, VarDecl, VarDeclarations, Vars, Consts, Const;
+nonterminal VarType, ConstType;
+nonterminal SquareBraces, SquareBracesVars;
+nonterminal Statements, Statement, DesignatorStatement;
+nonterminal OptionalMinus, AddOperand;
+nonterminal MultiplyOperand, OptionalIdent;
+nonterminal Numbers;
+
+Program::= (Program) PROG ProgName Namespaces  Declarations MainBody;
+ProgName::= (ProgName) IDENT:progName;
+
+MainBody::= (MainBody) LBRACE VOID MainLabel LPAREN RPAREN VarDeclarations LBRACE Statements RBRACE RBRACE;
+MainLabel::= (MainLabel) MAIN:mainLabel;
+Namespaces::= (NamespaceEmpty)
+					| 
+			  (NamespaceList) Namespaces Namespace;
+Namespace::= (Namespace) NAMESPACE NamespaceName LBRACE Declarations LBRACE RBRACE RBRACE;
+NamespaceName::= (NamespaceName) IDENT:namespaceName;
+
+Declarations::= (DeclarationsEmpty)
+						|
+				(DeclarationsVar) VarDecl Declarations
+						|
+				(DeclarationsConst) ConstDecl Declarations
+						|
+		   		(ErrorDecl) error SEMI:l
+				{: parser.report_error("Izvrsen oporavak do ; na liniji " + lleft, null); :} Declarations
+			 			|
+			 	(ErrorDeclComma) error COMMA:l 
+			 	{: parser.report_error("Izvrsen oporavak do , na liniji " + lleft, null); :} Declarations;
+				
+VarDecl::= (VarDecl) VarType IDENT:VarName SquareBraces Vars SEMI;
+VarType::= (VarType) Type:varType;
+				
+VarDeclarations::= (VarDeclarationsEmpty)
+							|
+				   (VarDeclarationsNotEmpty) VarDeclarations VarDecl;
+Vars::= (VarsEmpty)
+			|
+		(VarsNotEmpty) Vars COMMA IDENT:varsName SquareBracesVars ;
+		
+SquareBracesVars::= (SquareVarsEmpty)
+						|
+					(SquareVarsNotEmpty) LSQUAREBRACE RSQUAREBRACE;
+		
+		
+ConstDecl::= (ConstDecl) CONST ConstType IDENT:constName ASSIGMNET Const Consts SEMI;
+ConstType::=(ConstType) Type:constType;
+			
+Const::= (NumberConst) NUMBER:constNumberValue
+				|
+		  (CharConst) CHAR:constCharValue
+		  		|
+		  (BoolConst) BOOL:constBoolValue;
+Consts::= (ConstsEmpty)
+				|
+		  (ConstsNotEmpty)Consts COMMA IDENT ASSIGMNET Const ;
+		  
+		  
+Type::= (TypeOne) IDENT:typeName
+			|
+		(TypeTwo) IDENT COLON COLON IDENT;
+
+
+SquareBraces::= (SquareEmpty)
+					|
+				(Square) LSQUAREBRACE RSQUAREBRACE;
+				
+Statements::= (StatementsEmpty)
+					|
+			  (StatementsNotEmpty) Statements Statement;
+
+Statement::= (StatementDesignator) DesignatorStatement SEMI
+					|
+			 (StatementRead) READ LPAREN Designator RPAREN SEMI
+			 		|
+			 (StatementPrint) PRINT LPAREN Expr Numbers RPAREN SEMI
+			 		|
+			 (ErrorStatements) error SEMI:l
+			 {: parser.report_error("Izvrsen oporavak do ; na liniji" + lleft, null); :}
+			 		|
+			 (ErrorStmtComma) error COMMA:l 
+			 {: parser.report_error("Izvrsen oporavak do , na liniji" + lleft, null); :};
+Numbers::= (NumbersEmpty)
+				|
+		   (NumbersNotEmpty) COMMA NUMBER;
+		   
+		   
+DesignatorStatement::= (DesignatorStatementAssign) Designator ASSIGMNET Expr
+								|
+					   (DesigantorStatementsIncrement) Designator INCREMENT
+					   			|
+					   (DesigantorStatementsDecrement) Designator DECREMENT;
+
+
+					   
+					   
+Expr::= (Expr) OptionalMinus TermAddition;
+OptionalMinus::= (OptionalMinusEmpty) Term
+					|
+				 (OptionalMinusNotEmpty) MINUS Term;
+TermAddition::= (TermAdditionEmpty)
+						|
+				(TermAdditionNotEmpty) TermAddition AddOperand Term;
+AddOperand::= (AddOperandPlus) PLUS
+					|
+			  (AddOperandMinus) MINUS;
+Term::=(Term) Factor OptionalMultiply;
+
+Factor::= (FactorDesignator) Designator
+				|
+		  (FactorNum) NUMBER
+		  		|
+		  (FactorChar) CHAR
+		  		|
+		  (FactorBool) BOOL
+		  		|
+		  (FactorNewArray) NEW Type LSQUAREBRACE Expr RSQUAREBRACE
+		  		|
+		  (FactorBraceExpr) LPAREN Expr RPAREN; 
+
+
+OptionalMultiply::= (OptionalMultiplyEmpty)
+							|
+					(OptionalMultiplyNotEmpty) OptionalMultiply MultiplyOperand Factor;
+					
+MultiplyOperand::= (MultiplyOperandMulptipy) MULTIPY
+							|
+				   (MultiplyOperandDivide) DIVIDE
+				   			|
+				   (MultiplyOperandModus) MODUS;
+				   
+Designator::= (DesignatorNoIdent) IDENT:designatorName OptionalAccess:opAccess
+					|
+			  (DesignatorIdent) IDENT:namespaceName COLON COLON IDENT:designatorName OptionalAccess;
+
+OptionalAccess::= (OptionalAccessEmpty)
+						|
+				  (OptionalAccessIndex) OptionalAccess LSQUAREBRACE Expr RSQUAREBRACE
+				  		|
+				  (OptionalAccessParam) OptionalAccess FULLSTOP IDENT ;
+
+
+
